@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 def index(request):
     context = {
-        "title": "Halaman Home"
+        "title": "Halaman Home",
+        "active": "index"
     }
     return render(request, 'index.html', context)

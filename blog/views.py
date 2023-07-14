@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 def blog(request):
     context = {
-        "title": "Halaman Blog"
+        "title": "Halaman Blog",
+        "active": "blog"
     }
     return render(request, 'blog.html', context)
