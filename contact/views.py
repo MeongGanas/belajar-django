@@ -5,7 +5,6 @@ from django.shortcuts import render
 
 def contact(request):
     context = {
-        "title": "Halaman Contact",
-        "active": "contact"
+        "title": "Contact",
     }
     return render(request, 'contact.html', context)
