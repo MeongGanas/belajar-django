@@ -1,6 +1,6 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
-<div class="p-5 mb-5">
+<div class="p-5">
   <div class="container-fluid py-5">
     <h1 class="display-5 fw-bold">{{ title }}</h1>
     <p class="col-md-8 fs-5 my-4">
@@ -9,6 +9,36 @@
       how you can remix and restyle it to your liking.
     </p>
     <button class="btn btn-primary btn-lg">More Info</button>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="d-flex align-items-center p-5">
+    <div class="flex-shrink-0">
+      <img src="{% static 'img/profile.jpg' %}" alt="..." width="70" />
+    </div>
+    <div class="flex-grow-1 ms-3">
+      This is some content from a media component. You can replace this with any
+      content and adjust it as needed.
+    </div>
+  </div>
+  <div class="d-flex align-items-center p-5">
+    <div class="flex-shrink-0">
+      <img src="{% static 'img/profile.jpg' %}" alt="..." width="70" />
+    </div>
+    <div class="flex-grow-1 ms-3">
+      This is some content from a media component. You can replace this with any
+      content and adjust it as needed.
+    </div>
+  </div>
+  <div class="d-flex align-items-center p-5">
+    <div class="flex-shrink-0">
+      <img src="{% static 'img/profile.jpg' %}" alt="..." width="70" />
+    </div>
+    <div class="flex-grow-1 ms-3">
+      This is some content from a media component. You can replace this with any
+      content and adjust it as needed.
+    </div>
   </div>
 </div>
 {% endblock content %}
