@@ -39,6 +39,13 @@
           </li>
           <li class="nav-item">
             <a
+              class="nav-link {% if title == 'Dashboard' %} active {% endif %}"
+              href="{% url 'dashboard' %}"
+              >Dashboard</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
               class="nav-link {% if title == 'Login' %} active {% endif %}"
               href="{% url 'login' %}"
               >Login</a
