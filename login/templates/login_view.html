@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="p-5">
-  <h1 class="mb-5">Halaman Login</h1>
+  <h1 class="mb-5">Halaman {{ title }}</h1>
 
   <form class="user" action="" method="post">
     {% csrf_token %}
